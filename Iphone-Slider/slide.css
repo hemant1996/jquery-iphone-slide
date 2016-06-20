@@ -1,0 +1,100 @@
+.box
+{
+	margin: 0 auto;
+	width: 73.125%;
+	height: 100%;
+	max-width: 1170px;
+	overflow: hidden;
+}
+.slider
+{
+
+	float: right;
+	right: 7.6335%;
+	height: 700px;
+}
+
+      .mask {
+        position: relative;
+        left:21px;
+        top: -566px;
+        width: 276px;
+        height: 491px;
+        overflow: hidden;
+      }
+      .canvas {
+        position: relative;
+        width: 2380px;
+        height: 486px;
+      }
+      .page {
+        width: 276px;
+        height: 486px;
+        float:left;
+      }
+#arrow_right
+{
+	padding-left: 30px;
+
+}
+.arrow
+{
+	cursor: pointer;
+	transition: 0.3s ease;
+    -webkit-transition:0.3s ease;
+}
+#arrow_left
+{
+	margin-top: -780px;
+	margin-left: 11.8499%;
+}
+.arrow:hover
+{
+
+	transform:scale(1.05,1.05);
+}
+#content
+{	
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	height: 700px;
+}
+#content h1
+{
+	color: #046a38;
+	width: 42.7350%;
+
+	transition: 0.3s ease;
+    -webkit-transition:0.3s ease;
+}
+
+.text_content
+{
+	padding-top: 234px;
+	margin-left: 120px;
+}
+
+#content h1:hover + #myCanvas, #myCanvas:hover {
+ transform: rotateY(20deg);
+}
+#content h1:hover
+{
+	transform: scale(1.1,1.1);
+	cursor: pointer;
+}
+#content p
+{
+	padding-top: 40px;
+	width: 32.4786%;
+	color: #046a38;
+	text-align: justify;
+
+	transition: 0.3s ease;
+    -webkit-transition:0.3s ease;
+}
+#content p:hover
+{
+	cursor: pointer;
+	transform: scale(1.08,1.08);
+}

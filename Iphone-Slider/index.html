@@ -1,0 +1,97 @@
+      <!DOCTYPE html>
+<html>
+<head>
+<!-- published and developed by Hemant Bangar, @hemant1996 !-->
+  <title>@Hemant_Bangar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" type="text/css" href="slide.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+ <script type="text/javascript">
+
+  </script>
+  
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+
+
+</head>
+<footer>
+  <script src="js/placeholdem.min" type="text/javascript"></script>
+      <script src="js/swipe.js" type="text/javascript"></script>
+          <script type="text/javascript">
+          var head=["Content 1","Content 2","Content 3","Content 4","Content 5"];
+          var para=["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived took a galley of type and scrambled it to make a type specimen book. It has survived not only five centu","Lorem Ipsum is simply dummy text of the printing and typesetting industry. not only five centu","y default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!","The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.","There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Intern"];
+          var count=0;
+
+    $(document).ready(function(){
+      $("#arrow_right").click(function(){
+        if (count<4){
+          count=count+1;
+          $("div.canvas").animate({left: "-=276"});
+          $("#cont").text(head[count]);
+          $("#cont2").text(para[count]);
+        }else{
+          count=0;
+          $("div.canvas").animate({left:0});
+          $("#cont").text(head[count]);
+          $("#cont2").text(para[count]);
+        }
+      });
+      });
+       $(document).ready(function(){
+      $("#arrow_left").click(function(){
+        if (count>0){
+          count=count-1;
+          $("div.canvas").animate({left: "+=276"});
+          $("#cont").text(head[count]);
+          $("#cont2").text(para[count]);
+        }else{
+          count=4;
+          $("div.canvas").animate({left:-1104});
+          $("#cont").text(head[count]);
+          $("#cont2").text(para[count]);
+        }
+      });
+      });
+  
+    </script>
+</script>
+
+
+</footer>
+<body>
+  <div class="box" id="content">
+    
+    <div class="slider">
+
+      <img src="img/iphone.png">
+      <img class="arrow" id="arrow_right" src="img/Arrow_Right.png">
+      <div class="mask">
+        <div class="canvas">
+            <div class="page"><img src="img/SLIDE_1.png"></div>
+            <div class="page"><img src="img/slide_2.png"></div>
+            <div class="page"><img src="img/slide_3.png"></div>
+            <div class="page"><img src="img/slide_4.png"></div>
+            <div class="page"><img src="img/slide_5.png"></div>
+        </div>
+      </div>    
+    </div>
+    <div class="text_content">
+    <h1 id="cont">CONTENT HERE</h1>
+    <canvas id="myCanvas" width="200" height="0" style="border:1px solid #046a38;">
+    Your browser does not support the HTML5 canvas tag.
+    </canvas>
+    <p id="cont2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centu</p>
+
+    </div>
+    
+  </div>
+  <img class="arrow" id="arrow_left" src="img/Arrow_Left.png">
+</body>
+</html>
